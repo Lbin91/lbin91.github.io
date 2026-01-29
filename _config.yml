@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Bongjin Lee"
   avatar : "/assets/images/profile_bear.png"
-  bio    : "iOS Engineer  | Swift | Flutter | Web | Home Lab Enthusiast | Claude Code | Integrating AI into everyday life."
+  bio    : "iOS Engineer  l Swift l Flutter l Web l Home Lab Enthusiast l Claude Code l Integrating AI into everyday life."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

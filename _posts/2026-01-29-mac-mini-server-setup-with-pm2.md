@@ -83,6 +83,15 @@ pm2 logs my-server
 # 최근 100줄 로그 확인
 pm2 logs --lines 100
 
+# 서버 재시작 (코드 수정 반영 시 사용)
+pm2 restart my-server
+
+# 서버 중지
+pm2 stop my-server
+
+# 서버 삭제 (PM2 리스트에서 제거)
+pm2 delete my-server
+
 # CPU/메모리 모니터링 (시각적으로 예쁘게 보여줌)
 pm2 monit
 ```
