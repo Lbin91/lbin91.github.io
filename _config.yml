@@ -21,6 +21,18 @@ timezone: Asia/Seoul
 include:
   - _pages
 
+exclude:
+  - .AI_TEAM
+  - .DS_Store
+  - .omx
+  - .ruby-lsp
+  - Gemfile
+  - Gemfile.lock
+  - PERSONA.md
+  - docs
+  - reports
+  - vendor
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
