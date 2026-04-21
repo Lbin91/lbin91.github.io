@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[Home Lab] 나만의 AI 에이전트 관제탑 구축기: 텔레그램 vs 슬랙 vs 디스코드"
 date: 2026-02-19 00:00:00 +0900
 categories: [Home Lab, AI]
