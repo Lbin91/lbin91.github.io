@@ -64,7 +64,7 @@ GLM-5.1이 화제인 결정적 이유는 결국 숫자다. 감성 말고 벤치�
 
 특히 인상적인 건 장시간 자율 최적화 테스트다. VectorDB 구축 벤치마크에서 **600회 이상의 반복 수행**으로 성능을 끌어올린 사례는 꽤 흥미롭다. 구조화된 코드 생성 같은 특정 에이전트 테스트에서는 Opus를 역전하는 구간도 있었다. 모델이 오래 붙잡고 개선하는 쪽으로 가면, 단순 응답 품질과는 다른 게임이 된다.
 
-> 한 Reddit 유저의 요약이 이 상황을 가장 잘 설명해준다.
+> 한 커뮤니티 사용자의 요약이 이 상황을 가장 잘 설명해준다.
 > **Sonnet 4.6 < GLM 5.1 < Opus 4.6**
 > Opus가 살짝 더 낫지만, 가성비를 따지면 GLM이 압도적이다.
 
@@ -85,6 +85,6 @@ AI는 이제 코드 스니펫을 짜주는 보조 도구를 넘어, 수 시간�
 ---
 
 **참고 자료:**
-- [GLM 5.1 is hands down the best model right now!! - r/ZaiGLM](https://www.reddit.com/r/ZaiGLM/comments/1sjiszu/glm_51_is_hands_down_the_best_model_right_now/)
-- [Everyone is switching to GLM-5.1 after the Anthropic ban - r/openclaw](https://www.reddit.com/r/openclaw/comments/1sl5avl/everyone_is_switching_to_glm51_after_the/)
+- [GLM 5.1 is hands down the best model right now!!](https://www.reddit.com/r/ZaiGLM/comments/1sjiszu/glm_51_is_hands_down_the_best_model_right_now/)
+- [Everyone is switching to GLM-5.1 after the Anthropic ban](https://www.reddit.com/r/openclaw/comments/1sl5avl/everyone_is_switching_to_glm51_after_the/)
 - [Z.ai 공식 홈페이지](https://z.ai)
