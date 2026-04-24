@@ -1,8 +1,9 @@
 ---
 title: "아직도 git checkout 하세요? AI 시대의 로컬 개발 환경: Bare Repository 패턴"
 date: 2026-02-02T16:00:00+09:00
+excerpt: "AI 시대에 git worktree + bare repository로 동시 다작업 환경 구축하기"
 categories:
-  - development
+  - devtools
 tags:
   - Git
   - Worktree

@@ -1,6 +1,7 @@
 ---
 title: "로컬 LLM을 Claude Code 서브에이전트로 쓰면 컨텍스트 30배 절약된다"
 date: 2026-04-21T08:15:39+09:00
+excerpt: "로컬 LLM을 Claude Code 서브에이전트로 활용하면 컨텍스트를 30배 절약할 수 있다는 실험 결과"
 categories:
   - ai
 tags:

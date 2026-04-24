@@ -1,6 +1,7 @@
 ---
 title: "Opus 4.7의 불안을 자극하면 출력 품질이 떨어진다 — Anthropic이 공개한 모델 심리 플레이북"
 date: 2026-04-21T08:15:39+09:00
+excerpt: "Anthropic이 공개한 모델 심리 플레이북. Opus 4.7의 불안을 자극하면 출력 품질이 떨어지는 역설"
 categories:
   - ai
 tags:

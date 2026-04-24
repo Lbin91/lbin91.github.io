@@ -1,6 +1,7 @@
 ---
 title: "바이트댄스 ModelArk 코딩 플랜, 구독 피로의 대안이 될까"
 date: 2026-04-22T14:05:00+09:00
+excerpt: "바이트댄스 ModelArk 코딩 플랜이 구독 피로 시장에 던지는 대안과 한계를 분석했다"
 categories:
   - ai
 tags:

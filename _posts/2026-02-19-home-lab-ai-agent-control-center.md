@@ -1,7 +1,9 @@
 ---
 title: "[Home Lab] 나만의 AI 에이전트 관제탑 구축기: 텔레그램 vs 슬랙 vs 디스코드"
 date: 2026-02-19 00:00:00 +0900
-categories: [Home Lab, AI]
+excerpt: "텔레그램, 슬랙, 디스코드를 직접 비교한 AI 에이전트 관제 센터 선택 가이드"
+categories:
+  - server
 tags: [home-lab, ai-agent, telegram, slack, discord, automation, mac-mini, notification, monitoring]
 ---
 

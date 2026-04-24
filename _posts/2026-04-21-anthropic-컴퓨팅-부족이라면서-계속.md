@@ -1,6 +1,7 @@
 ---
 title: "Anthropic이 컴퓨팅 부족이라면서 왜 계속 새 기능을 쏟아내는가?"
 date: 2026-04-21T08:15:39+09:00
+excerpt: "Anthropic이 컴퓨팅 부족을 호소하면서도 새 기능을 연이어 발표하는 이유를 분석했다"
 categories:
   - ai
 tags:

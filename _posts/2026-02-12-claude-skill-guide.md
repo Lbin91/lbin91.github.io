@@ -1,8 +1,9 @@
 ---
 title: "프롬프트 엔지니어링의 다음 단계: Claude 'Skill' 시스템 파헤치기"
 date: 2026-02-12T12:00:00+09:00
+excerpt: "프롬프트 복붙의 시대는 끝났다. Claude Skill 시스템으로 반복 워크플로우를 자동화하는 법"
 categories:
-  - ai
+  - devtools
 tags:
   - Claude
   - AI

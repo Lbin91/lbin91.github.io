@@ -1,6 +1,7 @@
 ---
 title: "맥미니 홈서버, PM2로 안정적으로 운영하기"
 date: 2026-01-29T23:59:00+09:00
+excerpt: "iOS 개발자가 백엔드 초보의 시선으로 맥미니 홈서버에 PM2를 도입하며 겪은 시행착오"
 categories:
   - server
 tags:
