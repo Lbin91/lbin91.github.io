@@ -7,11 +7,11 @@ slug: "single-3090-qwen-122b-moe-ik-llama"
 excerpt: "192GB DDR5와 단일 RTX 3090으로 Qwen 3.5 122B MoE를 35 t/s에 구동한 사례를 분석한다. 핵심은 소프트웨어 최적화—ik_llama.cpp의 fused MoE ops가 기존 대비 5배의 속도 향상을 달성하는 방법을 정리했다."
 ---
 
-## 서론: 122B 모델을 집에서 돌린다고?
+122B짜리 거대 모델을 방구석 책상 위에서 초당 35토큰으로 돌린다고? 처음엔 또 어그로성 낚시글인 줄 알았다. (70B도 단일 GPU로 돌리려면 곡소리가 나는데 122B라니?)
 
-로컬 LLM 커뮤니티의 오랜 화두는 "얼마나 큰 모델을 가정에서 돌릴 수 있는가"다. 클라우드 API가 편하긴 하지만, 비용은 누적되고 데이터는 외부로 나간다. 그래서 로컬 추론은 늘 매력적인 대안이었다. 문제는 하드웨어. 70B 모델도 24GB VRAM GPU 하나로는 빡빡한 판에, 122B라니.
+로컬 LLM 커뮤니티의 오랜 화두는 "얼마나 큰 모델을 가정에서 돌릴 수 있는가"다. 클라우드 API가 편하긴 하지만, 비용은 눈덩이처럼 불어나고 내 프라이빗 데이터는 고스란히 남의 서버로 날아간다. 그래서 로컬 추론은 늘 매력적인 꿈이었다. 문제는 살벌한 하드웨어 가격. 70B 모델도 24GB VRAM GPU 하나로는 빡빡한 판에, 122B는 꿈도 못 꿀 영역으로 여겨졌다.
 
-그런데 r/openclaw에서 한 유저가 [놀라운 결과를 공유했다](https://www.reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/). 192GB DDR5 RAM과 RTX 3090 단 한 장으로 Qwen 3.5 122B MoE 모델을 **초당 35 토큰(t/s)** 속도로 구동한 것이다. 총 하드웨어 비용은 약 $3,600.
+그런데 r/openclaw에서 한 유저가 [놀라운 결과를 공유했다](https://www.reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/). 192GB DDR5 RAM과 중고 RTX 3090 단 한 장으로 Qwen 3.5 122B MoE 모델을 **초당 35 토큰(t/s)** 속도로 시원하게 뽑아낸 거다. 총 하드웨어 비용은 약 $3,600.
 
 이 글에서는 이게 어떻게 가능했는지, 핵심 기술인 ik_llama.cpp의 MTP 최적화가 무엇인지, 그리고 이것이 로컬 LLM 생태계에 의미하는 바를 정리한다.
 
@@ -25,7 +25,7 @@ Qwen 3.5 122B는 Mixture of Experts(MoE) 아키텍처를 사용한다. Dense 모
 
 ### 기존 llama.cpp의 한계
 
-문제는 속도다. RAM↔GPU 간 데이터 이동이 병목이 되어, 기존 llama.cpp로 MoE 모델을 오프로드하면 속도가 처참하다. 특히 Multi-Token Prediction(MTP) 기능을 켜면 오히려 속도가 **+4% 향상**에 그친다. MTP는 여러 토큰을 동시에 예측해 추론 속도를 높이는 기술인데, 오프로드된 MoE에서는 전문가 선택이 매 토큰마다 달라져 MTP의 이점이 거의 사라진다.
+문제는 속도다. RAM↔GPU 간 데이터 이동이 병목이 되어, 기존 llama.cpp로 MoE 모델을 오프로드하면 속도가 처참하다(토큰 하나 뽑는데 하염없이 커서 깜빡이는 거 보면 속이 터진다). 특히 Multi-Token Prediction(MTP) 기능을 켜면 오히려 속도가 **+4% 향상**에 그친다. MTP는 여러 토큰을 동시에 예측해 추론 속도를 높이는 기술인데, 오프로드된 MoE에서는 전문가 선택이 매 토큰마다 달라져 MTP의 이점이 거의 사라진다.
 
 ## 핵심 기술 2: ik_llama.cpp의 fused MoE ops
 
@@ -72,4 +72,4 @@ ik_llama.cpp는 이를 **통합(fused)** 처리한다. 필요한 전문가들을
 
 ---
 
-*이 글은 [r/openclaw](https://www.reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/)의 RSS 데이터를 기반으로 작성되었습니다.*
+*참고: [r/openclaw](https://www.reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/)의 논의 데이터를 바탕으로 정리했다.*

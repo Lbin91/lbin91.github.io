@@ -19,11 +19,11 @@ tags:
   - r/ClaudeCode
 ---
 
-## 서론: AI 모델이 무기가 되는 날
+정부 공문 한 장에 최신 AI 모델이 지구상에서 강제 증발해 버렸다. (이게 진짜 2026년에 일어날 수 있는 일인가 싶어 눈을 의심했다.)
 
-2026년 6월 13일, AI 업계에 지진이 일어났다. 미국 상무부가 Anthropic에 대해 Fable 5와 Mythos 5 모델의 모든 외국인 접근을 즉각 중단하라는 수출 통제 지시를 내린 것이다. 이 지시는 미국 영토 밖의 외국인은 물론, 미국 내 거주하는 외국 국적자, 심지어 Anthropic의 외국 국적 직원까지 모두 포함한다.
+미국 상무부가 Anthropic에 대해 Fable 5와 Mythos 5 모델의 모든 외국인 접근을 즉각 중단하라는 수출 통제 철퇴를 때렸다. 이 지시는 미국 영토 밖의 외국인은 물론, 미국 내 거주하는 외국 국적자, 심지어 Anthropic 사내 외국인 직원까지 모두 포함하는 극단적인 조치였다.
 
-결과적으로 Anthropic은 전 세계 모든 사용자에 대해 Fable 5와 Mythos 5를 즉시 비활성화했다. 한 번의 API 호출마다 지오펜싱과 시민권 확인을 하는 것이 인프라적으로 불가능했기 때문이다. r/ClaudeCode 커뮤니티는 폭발했다.
+API 호출마다 실시간으로 국적을 검증할 인프라가 있을 리 만무하니, Anthropic은 결국 전 세계 서비스를 통째로 내려버렸다. r/ClaudeCode 커뮤니티는 그야말로 아비규환이다.
 
 이 사건은 단순한 제품 중단 뉴스가 아니다. **정부가 상용 AI 모델의 배포를 직접 통제하기 시작한 최초의 사례**이며, 글로벌 AI 생태계의 지형을 바꿀 수 있는 전환점이다.
 
@@ -96,4 +96,4 @@ AI 규제는 더 이상 "언제 올 것인가"의 문제가 아니라 "어떤 �
 
 ---
 
-*이 글은 [Anthropic 공식 성명](https://www.anthropic.com/news/fable-mythos-access) 및 r/ClaudeCode 커뮤니티의 논의를 바탕으로 작성되었습니다. 원문은 [Anthropic 블로그](https://www.anthropic.com/news/fable-mythos-access)에서 확인할 수 있습니다.*
+*참고: [Anthropic 공식 성명](https://www.anthropic.com/news/fable-mythos-access) 및 r/ClaudeCode 커뮤니티의 논의를 바탕으로 정리했다.*

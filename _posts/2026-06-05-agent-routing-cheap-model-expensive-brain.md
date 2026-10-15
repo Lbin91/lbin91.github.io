@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "비싼 모델은 계획만, 싼 모델이 실행한다 — 에이전트 하이브리드 라우팅이 바꾸는 비용 구조"
 date: 2026-06-05 08:15:00 +0900
 categories: ai
@@ -7,7 +6,7 @@ tags: [LLM, 에이전트, 비용최적화, ClaudeCode, DeepSeek, 오케스트레
 slug: agent-routing-cheap-model-expensive-brain
 ---
 
-2026년 6월, Reddit r/ClaudeCode 커뮤니티에서 한 실험 결과가 화제다. Claude Code의 동적 워크플로 기능을 활용해, 오케스트레이터는 Claude Opus에 맡기고 실제 코딩 작업자는 DeepSeek V4 Pro, MiniMax M3, Kimi K2.6 같은 저가 모델로 라우팅하는 구조다. 결과는 비용 10배 절감, 품질 저하 거의 없음. "비싼 모델은 계획만, 싼 모델이 실행"이라는 문장이 에이전트 활용의 새로운 정석으로 자리잡고 있다.
+Opus를 온종일 돌리다 월말 카드 명세서를 보고 식은땀을 흘려본 적이 있는가? (난 있다... 하루에 수십 달러씩 갈려 나가면 진짜 눈물 난다.) 그런데 최근 r/ClaudeCode에서 기가 막힌 묘수가 터져 나왔다. 머리 쓰는 복잡한 계획은 비싼 Claude Opus에 맡기고, 손발 쓰는 단순 코딩 노동은 DeepSeek V4 Pro나 MiniMax 같은 헐값 모델로 뺑뺑이 돌리는 하이브리드 라우팅이다. 결과는? 비용은 1/10 토막인데 품질은 거의 그대로다.
 
 ## 만능 에이전트의 한계
 
@@ -77,4 +76,4 @@ await verify(result, 'claude-opus');
 
 ---
 
-*참고: 이 글은 Reddit r/ClaudeCode, r/LocalLLM, r/OpenClaw의 2026년 6월 5일 수집 데이터를 기반으로 작성되었습니다.*
+*참고: Reddit r/ClaudeCode, r/LocalLLM, r/OpenClaw의 트렌드 데이터를 바탕으로 정리했다.*

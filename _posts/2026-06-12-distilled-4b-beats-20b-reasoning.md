@@ -6,7 +6,9 @@ tags: [local-llm, qwen, distillation, benchmark, reasoning, small-model, efficie
 lang: ko
 ---
 
-2026년 6월, r/localllm에서 한 사용자가 RTX 4050 노트북에서 12개 소형 LLM을 상대로 추론 벤치마크를 진행했다. 논리 5문제, 코딩 5문제, 수학 5문제, 총 15문제로 구성된 테스트에서 공동 1위는 **Qwen3.6-35B-A3B**와 **Qwen3.5-9B-Claude-Opus-4.7**이 14/15로 차지했다. 하지만 진짜 화제는 따로 있었다. 파라미터 단 **4B**짜리 **Qwen3.5-4B-Distilled**가 **13/15**를 기록하며, 5배 큰 GPT-OSS-20B(12/15)를 역전한 것이다.
+파라미터 4B짜리 꼬꼬마 모델이 5배나 덩치 큰 20B 모델 뚝배기를 깼다. 처음엔 '또 체리피킹 벤치마크겠지' 하고 넘기려 했는데, RTX 4050 노트북에서 직접 돌린 실측 데이터를 뜯어보고는 턱이 떡 벌어졌다.
+
+r/localllm에서 진행된 소형 LLM 추론 벤치마크 결과, 진짜 이변이 일어났다. 파라미터 단 **4B**짜리 **Qwen3.5-4B-Distilled**가 **13/15**를 기록하며, 20B짜리 거물 GPT-OSS-20B(12/15)를 역전해 버린 것. (체급이 깡패라던 LLM 바닥에서 이게 말이 되나 싶다.)
 
 이 결과는 증류(distillation) 기반 소형 모델이 실용적 추론 능력에서 중대형 모델을 앞지를 수 있다는 구체적 증거다. 로컬 LLM 사용자에게 이것이 무엇을 의미하는지 파헤쳐보자.
 
@@ -82,4 +84,4 @@ Qwen3.5-9B-Claude-Opus-4.7의 이름이 말해주듯, 이 모델은 Claude Opus 
 
 ---
 
-*이 글은 Reddit r/LocalLLM의 사용자 벤치마크 데이터를 바탕으로 작성되었습니다. 원본 데이터는 [r/localllm](https://www.reddit.com/r/LocalLLM/)에서 확인할 수 있습니다.*
+*참고: Reddit r/LocalLLM의 사용자 벤치마크 데이터를 바탕으로 정리했다. 원본 데이터는 [r/localllm](https://www.reddit.com/r/LocalLLM/) 참고.*
