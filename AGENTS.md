@@ -81,12 +81,26 @@ _posts/YYYY-MM-DD-slug.md
 
 ## Blog Categories
 
+### 💻 Tech (기술 블로그 영역)
+
 | Category | Usage |
 |----------|-------|
-| `ai` | AI/LLM 관련 글 |
-| `development` | 개발 기술, 도구, 워크플로우 |
-| `tech` | 기술 트렌드, 산업 동향 |
-| `Home Lab` | 홈랩 구축, 서버 관리 |
+| `ai` | AI/LLM 관련 글, 모델 비교, 에이전트 |
+| `devtools` | 개발 도구, Claude Code, Cursor, Git, 터미널 |
+| `server` (또는 `Home Lab`) | 홈랩 구축, 맥미니 서버, PM2, 인프라 관리 |
+| `development` | 일반 개발 기술, 아키텍처, 워크플로우 |
+| `tech` | IT 기술 트렌드, 산업 동향 |
+
+### 🎮 Hobby (취미 블로그 영역)
+
+| Category | Usage |
+|----------|-------|
+| `hobby` | 취미 대분류 (취미 글 공통 상위 카테고리) |
+| `game` | 게임 플레이 후기, 공략, 게임 분석 |
+| `wardogs` | 게임 하위 카테고리: 대규모 밀리터리 FPS 워독스(WARDOGS) 전용 |
+| `video` | 영상 콘텐츠 감상 (영화, OTT 드라마, 애니메이션, 유튜브) |
+
+> 취미 카테고리 작성 시 `categories: [hobby, game, wardogs]` 또는 `categories: [hobby, video]` 형태로 대분류와 소분류를 함께 지정한다.
 
 ---
 

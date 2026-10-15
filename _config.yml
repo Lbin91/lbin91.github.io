@@ -1,7 +1,7 @@
 # Site settings
 title: "Lbin's Lab"
 email: bongjin.lee.dev@gmail.com
-description: "iOS Developer. 최신 AI 기술을 탐색하고, 실제 개발과 일상에 어떻게 활용할 수 있는지 정리합니다."
+description: "iOS Developer. 최신 AI 기술과 개발 실전, 그리고 게임·영상 등 진심인 취미 생활을 기록합니다."
 twitter_username:
 github_username: Lbin91
 minimal_mistakes_skin: dark
@@ -45,7 +45,7 @@ plugins:
 author:
   name: "Bongjin Lee"
   avatar: "/assets/images/profile_bear.png"
-  bio: "iOS Developer. 최신 AI 기술과 그 활용법을 정리합니다."
+  bio: "iOS Developer. 최신 기술과 게임·영상 등 좋아하는 것들을 깊게 파고듭니다."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
