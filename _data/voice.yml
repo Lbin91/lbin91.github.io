@@ -31,7 +31,7 @@ sentence_endings:
       - original: "원래대로 보이던 주제의 게시글들이 보이네"
         context: "상황 변화를 담담하게 확인"
 
-  - pattern: "~다 (해라체)"
+  - pattern: "~다 (정중체)"
     nuance: "단호하지만 무겁지 않음. 사실 전달 + 가벼운 감정"
     usage: "기본 서술. 가장 많이 쓰는 어미"
     examples:
@@ -194,9 +194,9 @@ persona:
 # ---------------------------------------------------------------------------
 blog_rules:
   tone:
-    default: "해라체 (~다, ~한다) 중심"
-    sparingly: "해요체 (~요)는 너무 가벼워 보이면 안 될 때만"
-    never: "~습니다, ~입니다 (정중체 금지)"
+    default: "정중체 (~습니다, ~합니다) 중심"
+    sparingly: "해요체 (~요)는 친근한 맥락에서만"
+    never: "해라체 (~다, ~한다) 반말 금지"
 
   emotion:
     principle: "감정을 숨기지 않는다. 솔직하게 쓴다"
@@ -213,7 +213,7 @@ blog_rules:
   structure:
     principle: "구조(H2, 리스트, 코드)는 유지, 목소리만 교체"
     intro: "첫 문장은 짧은 감상 한 줄로 시작"
-    body: "본문은 해라체. 비유/메타포는 환영"
+    body: "본문은 정중체. 비유/메타포는 환영"
     outro: "마무리도 가볍게. 교훈을 강요하지 않음"
 
   vocabulary_guideline:
